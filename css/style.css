@@ -1,0 +1,58 @@
+.bird{
+    width: 173px;
+    height: 271px;
+    /* background-color: red; */
+    background-image:url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    /* animation short in one line
+    animaton : name duration timing function delay iteration-count direction fill- mode 
+    */
+    animation: fly 1s steps(9) infinite;
+    /* animation-name: fly;
+    animation-timing-function: steps(9);
+    animation-iteration-count: infinite;
+    animation-duration: 1s; */
+}
+@keyframes fly {
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -1771px 0px;
+    }
+}
+.bird_container{
+    position: relative;
+    animation: birdfly 10s linear infinite;
+    animation-play-state: running;
+}
+@keyframes birdfly {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+     
+}
+.twitter{
+    width: 110px;
+    height: 118px;
+    /* background-color: red; */
+    background-image: url(../img/twittwer.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    transform: rotateZ(45deg);
+    animation: twitterfly 1s steps(3) 5s infinite;
+}
+@keyframes twitterfly {
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -361px 0px;
+    }
+}
